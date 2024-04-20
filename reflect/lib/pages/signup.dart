@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 
 class Signup extends StatelessWidget{
+=======
+import 'home.dart';
+
+class Signup extends StatelessWidget {
+>>>>>>> b796234b02907196796f6a35a82bd8efa396a26d
   const Signup({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sign Up'),
+        toolbarHeight: 10,
       ),
+
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -25,7 +32,7 @@ class Signup extends StatelessWidget{
               padding: EdgeInsets.symmetric(horizontal: 16),
               child: TextField(
                 decoration: InputDecoration(
-                  labelText: 'Last Nname',
+                  labelText: 'Last Name',
                 ),
               ),
             ),
@@ -57,9 +64,14 @@ class Signup extends StatelessWidget{
             ElevatedButton(
               onPressed: () {
                 // Implement your sign-up logic here
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Home()),
+                );
               },
               child: const Text('Sign Up'),
             ),
+<<<<<<< HEAD
             const SizedBox(height: 10),
             ElevatedButton.icon(
               onPressed: (){
@@ -76,10 +88,15 @@ class Signup extends StatelessWidget{
               icon: const Icon(Icons.apple),
               label: const Text('Sign Up with Android'),
             ),
+=======
+>>>>>>> b796234b02907196796f6a35a82bd8efa396a26d
           ],
         ),
       ),
     );
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b796234b02907196796f6a35a82bd8efa396a26d
