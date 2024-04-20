@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'signup.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -36,6 +37,17 @@ class Login extends StatelessWidget {
                 // Login logic here
               },
               child: const Text('Login'),
+            ),
+            const SizedBox(height: 32),
+            ElevatedButton(
+              onPressed: () {
+                // Navigate to the sign-up page
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Signup()),
+                );
+              },
+              child: const Text('Sign Up'),
             ),
           ],
         ),
