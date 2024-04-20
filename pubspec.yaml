@@ -1,8 +1,0 @@
-name: Reflect
-description: Bitcamp Project
-
-dependencies:
-  flutter:
-    sdk: flutter
-  mongo_dart: ^0.10.1
-  google_sign_in: ^5.2.1
