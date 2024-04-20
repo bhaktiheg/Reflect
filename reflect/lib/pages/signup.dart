@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Signup extends StatelessWidget{
+class Signup extends StatelessWidget {
   const Signup({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sign Up'),
+        toolbarHeight: 10,
       ),
+      
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

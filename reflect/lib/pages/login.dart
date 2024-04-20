@@ -8,8 +8,9 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login'),
+        toolbarHeight: 10,
       ),
+      
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -53,7 +54,5 @@ class Login extends StatelessWidget {
         ),
       ),
     );
-
   }
 }
-
