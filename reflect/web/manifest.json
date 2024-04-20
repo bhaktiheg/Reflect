@@ -1,6 +1,6 @@
 {
-    "name": "reflect_proj",
-    "short_name": "reflect_proj",
+    "name": "reflect",
+    "short_name": "reflect",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

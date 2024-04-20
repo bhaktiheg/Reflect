@@ -1,4 +1,4 @@
-package com.example.reflect_proj
+package com.example.reflect
 
 import io.flutter.embedding.android.FlutterActivity
 
