@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-
-final GoogleSignIn googleSignIn = GoogleSignIn();
 
 class Signup extends StatelessWidget{
   const Signup({super.key});
@@ -65,7 +62,9 @@ class Signup extends StatelessWidget{
             ),
             const SizedBox(height: 10),
             ElevatedButton.icon(
-              onPressed: _handleGoogleSignIn,
+              onPressed: (){
+
+              },
               icon: const Icon(Icons.login),
               label: const Text('Sign Up with Google'),
             ),
@@ -84,20 +83,3 @@ class Signup extends StatelessWidget{
   }
 }
 
-Future<void> _handleGoogleSignIn() async {
-  try {
-    final GoogleSignInAccount? googleSignInAccount = await googleSignIn.signIn();
-    if (googleSignInAccount != null) {
-      // Successful sign-in
-      print('User signed in: ${googleSignInAccount.displayName}');
-      // You can now use the googleSignInAccount information
-      // to sign up the user or perform other actions.
-    } else {
-      // User canceled the sign-in
-      print('User canceled sign-in.');
-    }
-  } catch (error) {
-    // Handle sign-in errors
-    print('Error signing in with Google: $error');
-  }
-}
