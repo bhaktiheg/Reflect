@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home.dart';
 
 class Signup extends StatelessWidget {
   const Signup({super.key});
@@ -9,7 +10,7 @@ class Signup extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 10,
       ),
-      
+
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -58,6 +59,10 @@ class Signup extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 // Implement your sign-up logic here
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Home()),
+                );
               },
               child: const Text('Sign Up'),
             ),

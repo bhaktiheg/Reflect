@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'signup.dart';
+import 'home.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -10,7 +11,7 @@ class Login extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 10,
       ),
-      
+
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -36,6 +37,10 @@ class Login extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 // Login logic here
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Home()),
+                );
               },
               child: const Text('Login'),
             ),
