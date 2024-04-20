@@ -1,6 +1,9 @@
 name: Reflect
 description: Bitcamp Project
 
+environment:
+  sdk: '^3.3.0'
+
 dependencies:
   flutter:
   sdk: flutter
